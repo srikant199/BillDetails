@@ -38,6 +38,9 @@ public class CacheConfiguration {
             cm.createCache(com.evolveback.srikant.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.evolveback.srikant.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.evolveback.srikant.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.evolveback.srikant.domain.BillDetails.class.getName(), jcacheConfiguration);
+            cm.createCache(com.evolveback.srikant.domain.BillDetails.class.getName() + ".lineItoms", jcacheConfiguration);
+            cm.createCache(com.evolveback.srikant.domain.LineItoms.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
