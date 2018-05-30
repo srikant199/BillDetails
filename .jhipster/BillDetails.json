@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "lineItoms",
+            "otherEntityName": "lineItoms",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "billDetails"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "billNumber",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180530052649",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "bill_details",
+    "jpaMetamodelFiltering": true,
+    "pagination": "infinite-scroll"
+}
