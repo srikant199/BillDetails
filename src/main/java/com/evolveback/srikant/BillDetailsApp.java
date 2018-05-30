@@ -35,7 +35,7 @@ public class BillDetailsApp {
     }
 
     /**
-     * Initializes BillDetails.
+     * This is used to initialize BillDetails.
      * <p>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p>
