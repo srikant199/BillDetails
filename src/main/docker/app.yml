@@ -1,0 +1,19 @@
+version: '2'
+services:
+    billdetails-app:
+        image: billdetails
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://billdetails-mysql:3306/billdetails?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=billdetails-elasticsearch:9300
+        ports:
+            - 8080:8080
+    billdetails-mysql:
+        extends:
+            file: mysql.yml
+            service: billdetails-mysql
+    billdetails-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: billdetails-elasticsearch
