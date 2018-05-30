@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "billDetails",
+            "otherEntityName": "billDetails",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "serialNumber",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "particular",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "amounts",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180530055745",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "line_itoms",
+    "jpaMetamodelFiltering": false,
+    "pagination": "infinite-scroll"
+}

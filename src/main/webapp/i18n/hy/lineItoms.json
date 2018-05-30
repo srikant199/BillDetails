@@ -1,0 +1,26 @@
+
+{
+    "billDetailsApp": {
+        "lineItoms" : {
+            "home": {
+                "title": "Line Itoms",
+                "createLabel": "Ստեղծել նոր Line Itoms",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Line Itoms",
+                "search": "Գտնել Line Itoms"
+            },
+            "created": "Նոր Line Itoms ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Line Itoms թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Line Itoms հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Line Itoms {{ id }}?"
+            },
+            "detail": {
+                "title": "Line Itoms"
+            },
+            "serialNumber": "Serial Number",
+            "particular": "Particular",
+            "amounts": "Amounts",
+            "billDetails": "Bill Details"
+        }
+    }
+}

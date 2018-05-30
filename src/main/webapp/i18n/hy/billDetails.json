@@ -1,0 +1,27 @@
+
+{
+    "billDetailsApp": {
+        "billDetails" : {
+            "home": {
+                "title": "Bill Details",
+                "createLabel": "Ստեղծել նոր Bill Details",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Bill Details",
+                "search": "Գտնել Bill Details"
+            },
+            "created": "Նոր Bill Details ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Bill Details թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Bill Details հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Bill Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Bill Details"
+            },
+            "date": "Date",
+            "name": "Name",
+            "billNumber": "Bill Number",
+            "phoneNumber": "Phone Number",
+            "lineItoms": "Line Itoms"
+        }
+    }
+}

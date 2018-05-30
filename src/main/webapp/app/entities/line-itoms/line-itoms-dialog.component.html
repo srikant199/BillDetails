@@ -1,0 +1,47 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myLineItomsLabel" jhiTranslate="billDetailsApp.lineItoms.home.createOrEditLabel">Create or edit a Line Itoms</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!lineItoms.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="lineItoms.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="billDetailsApp.lineItoms.serialNumber" for="field_serialNumber">Serial Number</label>
+            <input type="number" class="form-control" name="serialNumber" id="field_serialNumber"
+                [(ngModel)]="lineItoms.serialNumber" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="billDetailsApp.lineItoms.particular" for="field_particular">Particular</label>
+            <input type="text" class="form-control" name="particular" id="field_particular"
+                [(ngModel)]="lineItoms.particular" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="billDetailsApp.lineItoms.amounts" for="field_amounts">Amounts</label>
+            <input type="number" class="form-control" name="amounts" id="field_amounts"
+                [(ngModel)]="lineItoms.amounts" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="billDetailsApp.lineItoms.billDetails" for="field_billDetails">Bill Details</label>
+            <select class="form-control" id="field_billDetails" name="billDetails" [(ngModel)]="lineItoms.billDetailsId" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="billDetailsOption.id" *ngFor="let billDetailsOption of billdetails; trackBy: trackBillDetailsById">{{billDetailsOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

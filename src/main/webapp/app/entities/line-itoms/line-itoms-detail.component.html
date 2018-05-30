@@ -1,0 +1,40 @@
+
+<div *ngIf="lineItoms">
+    <h2><span jhiTranslate="billDetailsApp.lineItoms.detail.title">Line Itoms</span> {{lineItoms.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="billDetailsApp.lineItoms.serialNumber">Serial Number</span></dt>
+        <dd>
+            <span>{{lineItoms.serialNumber}}</span>
+        </dd>
+        <dt><span jhiTranslate="billDetailsApp.lineItoms.particular">Particular</span></dt>
+        <dd>
+            <span>{{lineItoms.particular}}</span>
+        </dd>
+        <dt><span jhiTranslate="billDetailsApp.lineItoms.amounts">Amounts</span></dt>
+        <dd>
+            <span>{{lineItoms.amounts}}</span>
+        </dd>
+        <dt><span jhiTranslate="billDetailsApp.lineItoms.billDetails">Bill Details</span></dt>
+        <dd>
+            <div *ngIf="lineItoms.billDetailsId">
+                <a [routerLink]="['/bill-details', lineItoms.billDetailsId]">{{lineItoms.billDetailsId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'line-itoms/'+ lineItoms.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

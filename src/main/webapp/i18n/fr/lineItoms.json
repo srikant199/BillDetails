@@ -1,0 +1,26 @@
+
+{
+    "billDetailsApp": {
+        "lineItoms" : {
+            "home": {
+                "title": "LineItoms",
+                "createLabel": "Créer un nouveau Line Itoms",
+                "createOrEditLabel": "Créer ou éditer un Line Itoms",
+                "search": "Recherche pour Line Itoms"
+            },
+            "created": "Un nouveau Line Itoms a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Line Itoms avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Line Itoms avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Line Itoms {{ id }} ?"
+            },
+            "detail": {
+                "title": "Line Itoms"
+            },
+            "serialNumber": "Serial Number",
+            "particular": "Particular",
+            "amounts": "Amounts",
+            "billDetails": "Bill Details"
+        }
+    }
+}

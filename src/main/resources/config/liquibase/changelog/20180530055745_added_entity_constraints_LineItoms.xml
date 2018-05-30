@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity LineItoms.
+    -->
+    <changeSet id="20180530055745-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="bill_details_id"
+                                 baseTableName="line_itoms"
+                                 constraintName="fk_line_itoms_bill_details_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="bill_details"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,27 @@
+
+{
+    "billDetailsApp": {
+        "billDetails" : {
+            "home": {
+                "title": "BillDetails",
+                "createLabel": "Créer un nouveau Bill Details",
+                "createOrEditLabel": "Créer ou éditer un Bill Details",
+                "search": "Recherche pour Bill Details"
+            },
+            "created": "Un nouveau Bill Details a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Bill Details avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Bill Details avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Bill Details {{ id }} ?"
+            },
+            "detail": {
+                "title": "Bill Details"
+            },
+            "date": "Date",
+            "name": "Name",
+            "billNumber": "Bill Number",
+            "phoneNumber": "Phone Number",
+            "lineItoms": "Line Itoms"
+        }
+    }
+}
